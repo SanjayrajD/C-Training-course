@@ -1,0 +1,20 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+float distance(float a,float b,float c,float d)
+{
+        float f,e;
+        e=((c-a)*(c-a))+((d-b)*(d-b));
+        f=sqrt(e);
+        return f;
+}
+int main()
+{
+    float a,b,c,d;
+    float f;
+    cin>>a>>b>>c>>d;
+    distance(a,b,c,d);
+    cout<<fixed<<setprecision(2)<<"Distance between the 2 points is "<<distance(a,b,c,d);
+    
+}
