@@ -1,0 +1,26 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d,f;
+    float e;
+    cin>>a>>e>>b;
+    if(a==4 || a==5 || a==6 || a==11 || a==12)
+    {
+        c=(((20*e)/100)+e);
+        d=(c*b);
+        cout<<fixed<<setprecision(2)<<"Hotel Tariff: Rs."<<d;
+    }
+    else if(a>12)
+    {
+        cout<<"Invalid Input";
+    }
+    else
+    {
+        f=(e*b);
+        cout<<fixed<<setprecision(2)<<"Hotel Tariff: Rs."<<f;
+
+    }
+    
+}
