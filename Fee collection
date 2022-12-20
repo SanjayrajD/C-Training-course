@@ -1,0 +1,53 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main()
+{
+    float a,b,c,d,e,f,g,h,i,j;
+    string str;
+    cout<<"Enter the student type"<<endl;
+    cin>>str;
+    /*cout<<"Enter tuition fee"<<endl;
+    cin>>a;*/
+    if(str=="MSDS")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>a;
+        cout<<"Enter Bus fee"<<endl;
+        cin>>c;
+        d=(a+c);
+        cout<<fixed<<setprecision(2)<<"The fees to be paid by the student is Rs."<<d;
+    }
+    else if(str=="MSH")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>a;
+       cout<<"Enter hostel fee"<<endl;
+       cin>>b;
+       e=(a+b);
+       cout<<fixed<<setprecision(2)<<"The fees to be paid by the student is Rs."<<e;
+    }
+    else if(str=="MGSDS")
+    {
+        cout<<"Enter tuition fee"<<endl;
+         cin>>a;
+        cout<<"Enter Bus fee"<<endl;
+        cin>>h;
+        f=(((150*a)/100)+h);
+      cout<<fixed<<setprecision(2)<<"The fees to be paid by the student is Rs."<<f;
+    }
+    else if(str=="MGSH")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>a;
+        cout<<"Enter hostel fee"<<endl;
+        cin>>i;
+        g=(((150*a)/100)+i);
+        cout<<fixed<<setprecision(2)<<"The fees to be paid by the student is Rs."<<g;
+    }
+    else
+    {
+        cout<<"Invalid Input..";
+    }
+}
