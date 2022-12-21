@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,y;
+    int z=12,l;
+    cout<<"Enter the number of Months :"<<endl;
+    cin>>x;
+    int arr[z];
+        arr[0]=0;
+        arr[1]=1;
+        for(int i=2;i<12;i++)
+        {
+            arr[i]=arr[i-2]+arr[i-1];
+        }
+        cout<<"The amoeba size is "<<arr[x-1];
+}
