@@ -1,0 +1,19 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+  int a,b,c;
+  cin>>a>>b>>c;
+  float l,m,n,o;
+  l=(a*b*c)/100;
+  m=(a+l);
+  n=(l/100)*2;
+  o=(m-n);
+  cout<<fixed<<setprecision(2);
+  cout<<l<<endl;
+  cout<<m<<endl;
+  cout<<n<<endl;
+  cout<<o;
+  
+}
