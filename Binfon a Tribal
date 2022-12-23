@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    int l,m,n,o,p;
+    cin>>a;
+    l=(a/365);
+    m=(a%365);
+    n=(m/7);
+    o=(a-((l*365)+(n*7)));
+    cout<<l<<endl<<n<<endl<<o;
+    
+
+    
+}
