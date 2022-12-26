@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int digit(int a)
+{
+    int c,b=0;
+    while(a>0)
+    {
+        c=(a%10);
+        a=a/10;
+        b=(b+c);
+    }
+    return(b);
+    
+}
+int main()
+{
+    int a;
+    cin>>a;
+    digit(a);
+    cout<<digit(a);
+}
