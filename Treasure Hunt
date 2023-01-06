@@ -1,0 +1,15 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    int l,m,n;
+    cin>>a>>b>>c;
+    l=(a*b)/100;
+    m=((a-l)*c)/100;
+    n=(a-(l+m))/3;
+    cout<<l<<endl;
+    cout<<round(m)<<endl;
+    cout<<n;
+}
